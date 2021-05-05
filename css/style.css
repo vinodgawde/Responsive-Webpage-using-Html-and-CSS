@@ -1,0 +1,244 @@
+/* css Reset */ 
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo 
+{
+    margin: 0px 4px;
+ }
+#logo img{
+    height: 50px;
+    margin: 2px 2px;
+    width: 129px;
+    border-radius: 18px;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before
+{   
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 5px 26px;
+    border-radius: 18px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    opacity: 60%;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 505px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('/img/bg.jpg') no-repeat, center, center/cover;
+    height: 182%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.73;
+}
+ 
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Services section */
+.services-container{
+    background-color: rgba(143, 137, 121, 0.842);
+}
+#services{
+    display: flex;
+   
+}
+
+#services .box{
+    background-color: rgb(253, 250, 236);
+    border: 2px solid rgb(179, 62, 62);
+    margin: 4px 3px;
+    border-radius: 10px;
+}
+
+#services .box:hover{
+    background-color: rgb(255, 243, 196);
+}
+
+#services .box img{
+    display: block;
+    height: 153px;
+    margin: auto;
+    padding: 9px;
+}
+
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Client section */
+#client-section{
+    height: 309px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/img/bg1.jpg) no-repeat, center, center/cover;
+    height: 185%;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.5;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 85px;
+    padding: 5px 12px;
+    margin: 5px 14px;
+}
+
+/* Contact Us section */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 12px;
+
+}
+
+#contact-box input,
+#contact-box textarea [placeholder],
+[placeholder]
+{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 6px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#contact-box form
+{
+    width: 40%;
+}
+
+#contact-box label
+{
+font-size: 1.3rem;
+font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+
+/* footer section */
+.footer
+{
+    color:black;
+    padding: 2px 12px;
+    margin-top: 56px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.9rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-primary1{
+    margin-top: 109px;
+    background-color: rgba(158, 145, 111, 0.79);
+    font-size: 1.9rem;
+    padding: 10px;
+    font-family: "Baloo Bhai 2", cursive;
+}
+
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn
+{
+    margin: 25px 12px;
+    background-color: burlywood;
+    color: rgb(36, 35, 35);
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    padding: 7px 22px;
+    border: 2px solid rgb(248, 196, 128);
+    border-radius: 12px;
+    opacity: 85%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(139, 116, 84);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(165, 138, 102);
+}
+
+.center{
+    text-align: center;
+}
