@@ -70,7 +70,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: url('/bg.jpg') no-repeat, center, center/cover;
+    background: url('../bg.jpg') no-repeat, center, center/cover;
     height: 182%;
     width: 100%;
     z-index: -1;
@@ -129,7 +129,7 @@
 #client-section::before{
     content: "";
     position: absolute;
-    background: url('/bg1.jpg') no-repeat, center, center/cover;
+    background: url('../bg1.jpg') no-repeat, center, center/cover;
     height: 185%;
     width: 100%;
     z-index: -3;
